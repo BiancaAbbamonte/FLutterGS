@@ -1,6 +1,6 @@
 # globalsolution
 
-A new Flutter project.
+Global Solution - DESENVOLVIMENTO CROSS PLATFORM - FLutter
 
 ## Getting Started
 
