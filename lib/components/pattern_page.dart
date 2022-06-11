@@ -11,12 +11,14 @@ const PatternPage({required this.body, required this.pageTile});
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
             pageTile,
-            style: const TextStyle(fontSize: 22)
+            style:
+            const TextStyle(fontSize: 22)
         ),
           backgroundColor: const Color(0xFF980D0D),
-
+        automaticallyImplyLeading: false,
       ),
       body: Padding(
           padding: EdgeInsets.only(

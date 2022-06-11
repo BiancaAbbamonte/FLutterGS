@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:globalsolution/components/pattern_button.dart';
-import 'package:globalsolution/modules/HomeQuizPage/quizController.dart';
+import 'package:globalsolution/modules/quiz page/quizController.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 import '../../components/pattern_page.dart';
@@ -14,34 +13,6 @@ var alertStyle = const AlertStyle(
   isCloseButton: false,
   isOverlayTapDismiss: false,
 );
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return PatternPage(
-      pageTile: "Quiz Space Tourism",
-      body: SingleChildScrollView(
-          child: Column(
-              children: [
-                PatternButton(
-                  buttonText: 'Start',
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: ((context) => Quizzler()),
-                      ),
-                    );
-                  },
-                ),
-              ]
-          )
-      ),
-    );
-  }
-}
 
 class Quizzler extends StatelessWidget {
   @override
@@ -76,7 +47,7 @@ class _QuizPageState extends State<QuizPage> {
           buttons: [
             DialogButton(
               color: const Color(0xFF980D0D),
-              child: Text(
+              child: const Text(
                 "Próxima página",
                 style: TextStyle(
                     color: Colors.white, fontSize: 20
@@ -98,14 +69,14 @@ class _QuizPageState extends State<QuizPage> {
       } else {
         if (userPickedAnswer == correctAnswer) {
           scoreKeeper.add(
-            Icon(
+            const Icon(
               Icons.check,
               color: Colors.green,
             ),
           );
         } else {
           scoreKeeper.add(
-            Icon(
+            const Icon(
               Icons.close,
               color: Colors.red,
             ),
@@ -146,7 +117,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 checkAnswer(true);
               },
-              child: Text(
+              child: const Text(
                 'True',
                 style: TextStyle(
                   color: Colors.white,
@@ -165,7 +136,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 checkAnswer(false);
               },
-              child: Text(
+              child: const Text(
                 'False',
                 style: TextStyle(
                   color: Colors.white,

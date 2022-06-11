@@ -17,7 +17,7 @@ class PatternButton extends StatelessWidget {
           primary: Colors.red[900],
         ),
         child: Align(
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.center,
           child: Text(buttonText),
         ),
       ),

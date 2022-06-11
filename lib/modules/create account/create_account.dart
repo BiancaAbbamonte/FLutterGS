@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:globalsolution/components/pattern_page.dart';
 import '../../../utils/patting_sizes.dart';
 import '../../components/pattern_button.dart';
 import '../../components/pattern_textform.dart';
 import '../../utils/ui_text.dart';
+import '../login_page.dart';
 
 // ignore: use_key_in_widget_constructors
 class CreateAccount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(createAccount),
-      ),
+    return PatternPage(
+      pageTile: "Criar Conta",
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(
@@ -47,7 +47,14 @@ class CreateAccount extends StatelessWidget {
               ),
               PatternButton(
                 buttonText: createAccount,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => LoginPage()),
+                    ),
+                  );
+                },
               ),
             ],
           ),

@@ -4,8 +4,9 @@ import '../components/pattern_button.dart';
 import '../components/pattern_clickable_text.dart';
 import '../components/pattern_textform.dart';
 import '../utils/ui_text.dart';
-import 'HomeQuizPage/home_quiz.dart';
 import 'create account/create_account.dart';
+import 'new password/new_password.dart';
+import 'home countdown/home_page.dart';
 
 // ignore: use_key_in_widget_constructors
 class LoginPage extends StatelessWidget {
@@ -21,7 +22,7 @@ class LoginPage extends StatelessWidget {
           ),
           child: Column(
             children: [
-                  Image.asset("assets/images/logo.png"),
+                  Image.asset("assets/images/logo1.png"),
               PatternTextForm(
                 label: eMail,
               ),
@@ -65,9 +66,14 @@ class LoginPage extends StatelessWidget {
               PatternClickableText(
                 label: "Esqueci a senha",
                 onTap: () {
-                  print('Um e-mail foi enviado para redefinir a senha');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => PasswordPage()),
+                    ),
+                  );
                 },
-              )
+              ),
             ],
           ),
         ),

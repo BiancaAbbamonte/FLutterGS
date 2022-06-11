@@ -4,7 +4,7 @@ class PatternClickableText extends StatelessWidget {
   final String label;
   final Function()? onTap;
 
-  PatternClickableText({required this.label, required this.onTap});
+  const PatternClickableText({required this.label, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

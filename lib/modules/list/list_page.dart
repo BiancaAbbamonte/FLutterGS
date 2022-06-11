@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:globalsolution/modules/last_page.dart';
 import '../../components/pattern_button.dart';
 import '../../components/pattern_card.dart';
 import '../../components/pattern_page.dart';
@@ -87,7 +88,21 @@ class _ListPageState extends State<TravelListPage> {
                   ),
                 );
               }),
-            )
+            ),
+            const SizedBox(
+              height: 280,
+            ),
+            PatternButton(
+              buttonText: 'Próxima página',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => const LastPage()),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),

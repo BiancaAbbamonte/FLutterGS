@@ -1,4 +1,4 @@
-import 'package:globalsolution/modules/HomeQuizPage/question.dart';
+import 'package:globalsolution/modules/quiz page/question.dart';
 
 class Quiz {
   int _questionNumber = 0;
