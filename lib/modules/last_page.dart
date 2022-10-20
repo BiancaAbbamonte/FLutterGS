@@ -22,7 +22,7 @@ class LastPage extends StatelessWidget {
               child: Column(
                   children: [
                     Blurry.success(
-                      title:  'Group Members',
+                      title:  'Project',
                       description:
                       'Bianca Abbamonte Aveno RM 84230\n'
                           'Projeto FIAP',
