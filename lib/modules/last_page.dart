@@ -24,7 +24,7 @@ class LastPage extends StatelessWidget {
                     Blurry.success(
                       title:  'Project',
                       description:
-                      'Bianca Abbamonte Aveno RM 84230\n'
+                      'Bianca Abbamonte \n'
                           'Projeto FIAP',
                       cancelButtonText: 'Tela Anterior',
                         onCancelButtonPressed: () {
