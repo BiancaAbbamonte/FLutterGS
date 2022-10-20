@@ -25,8 +25,7 @@ class LastPage extends StatelessWidget {
                       title:  'Group Members',
                       description:
                       'Bianca Abbamonte Aveno RM 84230\n'
-                          'Larissa Evelyn dos Santos Balbino 86483\n'
-                          'Gabriel Augusto Testa 81781',
+                          'Projeto FIAP',
                       cancelButtonText: 'Tela Anterior',
                         onCancelButtonPressed: () {
                           Navigator.push(
